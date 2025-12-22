@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Website - Developer & Designer"
+    />
+    <title>Portfolio | muhammad faruuq</title>
+
+    <!-- Link ke CSS -->  
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome untuk ikon skills -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>    
+    <div class="overflow">
+      <!-- NAVBAR -->
+      <nav class="navbar" data-aos="fade-down">
+        <div class="max-width">
+          <div class="logo"><a href="#">PORTO<span>folio</span>.</a></div>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- HOME SECTION -->
+      <section class="home" id="home">
+        <div class="max-width">
+          <div class="home-content">
+            <div class="text-1 fade-in">Halloo, nama saya</div>
+            <div class="text-2 fade-in">Muhammad Faruuq</div>
+            <div class="text-3 fade-in">
+              <p>
+                “Dan saya adalah seorang <span> progamer.”</span>
+              </p>
+            </div>
+            <button 
+              class="btn-hire"
+              data-aos="fade-right"
+              onclick="openWhatsApp()">
+              <p>Contact Me!</p>
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="max-width">
+          <div class="about-inner">
+            <img src="images/photo_2025-11-04_19-41-08.jpg" alt="Profile" class="profile-img" />
+            <div class="about-text">
+              <h2>About Me</h2>
+              <h5>Developer & Designer</h5>
+              <p>
+                Hi, my name is  Muhammad Faruuq.
+                I’m an Indonesian student born in Purworejo on June 29, 2009
+                I’m a front-end web developer who enjoys building interactive websites with smooth animations.
+                I work with HTML, and CSS, using Visual Studio Code for coding and canva for design.
+                Currently, I study at SMA IT HSI Boarding School.
+              </p>
+              <button 
+                class="btn-hire"
+                data-aos="fade-right"
+                onclick="openWhatsApp()">
+                <p>Contact Me!</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="skills" id="skills">
+        <div class="tittle" data-aos="fade-up"><h2>My Skills</h2></div>
+        <div class="box">
+          <div class="card" data-aos="fade-up-right">
+            <img src="images/html.png" alt="HTML" />
+            <h5>HTML</h5>
+            <p>HTML provides the basic structure and meaning of a website.</p>
+          </div>
+
+          <div class="card" data-aos="fade-up-left">
+            <img src="images/csss.png" alt="CSS" />
+            <h5>CSS</h5>
+            <p>CSS controls the appearance and visual comfort of a website.</p>
+          </div>
+
+          <div class="card" data-aos="fade-down-right">
+            <img src="images/canvaa.png" alt="canva" />
+            <h5>Canva</h5>
+            <p>
+              "Add animations, form validation,
+               and real-time responses for a better user experience."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKS SECTION -->
+      <section class="karya" id="works">
+        <div class="max-width">
+          <div class="tittle">
+            <h2>My Learning Journey</h2>
+          </div>
+          <div class="work-grid">
+            <div class="kartu work-card">
+              <img
+                class="img"
+                src="images/Thumbnail tugas bahas arab.png"
+                alt="Project 1"
+              />
+              <div class="card_body">
+                <h3>Bahasa Arab</h3>
+                <p>
+                  Dokumentasi pembelajaran Bahasa Arab meliputi hiwar (percakapan), qira'ah kitab, tafsir, dan berbagai tugas lainnya.
+                </p>
+                <button class="btn-card" onclick="location.href='project1.html'">View Details</button>
+              </div>
+            </div>
+            <div class="kartu work-card">
+              <img
+                class="img"
+                src="images/Thumbnail it.png"
+                alt="Project 2"
+              />
+              <div class="card_body">
+                <h3>Information Technology</h3>
+                <p>
+                 Dokumentasi pembelajaran IT meliputi web development, programming, design, dan berbagai project teknologi.
+                </p>
+                <button class="btn-card" onclick="location.href='project2.html'">View Details</button>
+              </div>
+            </div>
+            <div class="kartu work-card">
+              <img
+                class="img"
+                src="images/Thumbnail tathfidz.jpg"
+                alt="Project 3"
+              />
+              <div class="card_body">
+                <h3>Tahajji & Tahfidz</h3>
+                <p>
+                  Dokumentasi pembelajaran membaca Al-Qur'an dengan tartil dan perjalanan menghafal ayat-ayat suci.
+                </p>
+               <button class="btn-card" onclick="location.href='project3.html'">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+        <div class="contact-info" id="contact">
+          <div class="contact-item">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <span>muhammad4ja.29@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <span>+62 856 9218 7992</span>
+          </div>
+          <div class="contact-item">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <span>Purworejo, Indonesia</span>
+        </div>
+
+        <!-- Sosial Media Kotak-kotak -->
+        <div class="sosial-box">
+          <a
+            href="https://www.instagram.com/muhammad.f_06/"
+            target="_blank"
+            class="sosial-item">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+           href="https://wa.me/6285692187992"
+           target="_blank" 
+           class="sosial-item">
+          <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2025 Muhammad Faruuq. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-top" id="scrollTop">
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
+    </button>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+    <script>
+      function openWhatsApp() {
+      const phoneNumber = "6285692187992"; // tanpa +
+      const message = "Halo, saya ingin bertanya tentang portfolio Anda!";
+
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>   
